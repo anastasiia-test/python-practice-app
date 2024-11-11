@@ -1,9 +1,6 @@
 from flask import Flask
 
 
-def create_app():
-    app = Flask(__name__)
-
 stores = [
     {
         "name": "My Store",
@@ -16,6 +13,10 @@ stores = [
 
     }
 ]
+
+
+#def create_app():
+app = Flask(__name__)
 
 @app.get("/store")
 def get_stores():
