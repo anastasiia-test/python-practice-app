@@ -14,9 +14,10 @@ stores = [
     }
 ]
 
+app = Flask(__name__)
 
 #def create_app():
-app = Flask(__name__)
+#    app = Flask(__name__)
 
 @app.get("/store")
 def get_stores():
